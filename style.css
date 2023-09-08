@@ -1,0 +1,436 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@900&family=PT+Sans:wght@700&family=REM:wght@600;900&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #232323;
+    transition:2s linear ease-in ;
+    
+}
+
+.firstContainer{
+    height: 43.8rem;
+    background: url(assets/images/background.jpg);
+    background-size: stretch !important;
+    background-position: center !important;
+    position: relative;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+
+.firstContainer::before{
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.553);
+    z-index: -1; 
+    width: 100%;
+}
+
+.heading{
+    height: 3.2rem;
+    width: 80vw;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: -18.8rem;
+    color:white
+    
+}
+
+.netflixLogo{
+    position: relative;
+    width: 12.2rem;
+    height: 7.88rem;
+    margin-right: 100px;    
+}
+
+.children{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+}
+.btn{
+    text-decoration: none;
+    color: white;
+    padding: .4rem;
+    background: red;
+    border-radius: .4rem;
+}
+select{
+    background: transparent;
+    color: white;
+    padding: .3rem;
+    border: none;
+}
+
+.lang{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1.3px solid white;
+    padding: .23rem;
+    border-radius: .3rem;
+    font-weight: bolder;
+    font-size: 14px;
+}
+.globe{
+    height: 1.5rem;
+}
+.language select{
+    font-size: 20px;
+}
+
+.data{
+    color: black;
+    background-color: transparent;
+    position: absolute;
+    height: 13rem;
+    margin-top: 4rem;
+    color: white;
+}
+.theme{
+    font-size: 3.2rem;
+    font-weight: bold;
+    letter-spacing: -0.2px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+.text{
+    font-size: 1.9rem;
+}
+.centerText{
+    display: flex;
+    /* background: #000; */
+
+    margin: 30px 0;
+    align-items: center;
+    
+}
+.second{
+    font-weight: 800;
+    align-items: center;
+    margin: auto;
+}
+.mail {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.9rem;
+    margin-top: 1.2rem;
+}
+
+.mail .input {
+    /* position: relative; */
+    width: 400px;
+}
+
+.mail .input input {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 0, 0.25);
+    background: transparent;
+    border-radius: 5px;
+    outline: none;
+    color: #fff;
+    font-size: 1em;
+    cursor: text; 
+}
+
+.mail .input span {
+    position: absolute;
+    left: 12.36rem;
+    top: 14.2rem;
+    padding: 10px;
+    font-size: 1em;
+    /* color: rgba(255, 255, 0, 0.25); */
+    color: white;
+    text-transform: uppercase;
+    transition: all 0.1525s  ease-in-out;
+    cursor: text; 
+
+}
+
+.input input:valid ~ span,
+.input input:focus ~ span {
+    color: #00dfc4;
+    transform: translateX(10px) translateY(-14px);
+    font-size: 0.65em;
+    padding: 0 10px;
+    background: #1d2b3a;
+    border-left: 1px solid #00dfc4;
+    border-radius: 1px solid #00dfc4;
+    letter-spacing: 0.2em;
+    cursor: text;
+}
+
+.input:nth-child(2):valid ~ span,
+.input:nth-child(2):focus ~ span {
+    background: #00dfc4;
+    color: #1d2b3a;
+    border-radius: 2px;
+}
+
+.input input:valid ~ span,
+.input input:focus ~ span {
+    border: 1px solid #00dfc4;
+}
+.input{
+    margin: 0 55px;
+}
+
+.mail .btn{
+    padding: 1.2rem;
+    width: max-content;
+    border-radius: .2rem;
+    font-size: larger;
+    font-weight:bolder;
+    font-family: 'Outfit', sans-serif;
+    letter-spacing: 2px;
+    
+}
+.input input:focus {
+    border: 1px solid #00dfc4; 
+}
+
+.secondContainer{
+    height: 28rem;
+    width: 100%;
+    background: black;
+    position: relative;
+    margin-top: 12px;
+    align-items: center;
+
+}
+
+.child{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    padding: 0 66px;
+    
+    width: 80%;
+    margin: 0 auto;
+
+
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    z-index: 1;
+
+}
+
+.text span{ 
+    color: white;
+
+}
+
+.text .head{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2.8rem;
+    color: white;
+}
+
+.text .spans{
+    font-size: 23px;
+    line-height: 1.2;
+    color: white;
+}
+
+.para{
+    max-width: 28rem;
+}
+
+.image {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 500px;
+    height: auto;
+    display: block;
+}
+
+video {
+    position: absolute;
+    top: 49%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    height: 75%;
+    object-fit:contain;
+    /* z-index: -1; */
+}
+
+.strangers-thing .text h2{ 
+    color: white;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 2.8rem;
+}
+
+
+.strangers-thing .text p{
+    font-size: 23px;
+    line-height: 1.2;
+    color: white;
+}
+
+.strangers-thing .text { 
+    padding: 1rem;
+}
+
+.img{
+    width: 32.2rem;
+    margin: 0 -98px 23px -94px;
+}
+
+.temp{
+    height: 100px;
+    width: 330px;
+    /* background: red; */
+    border: 1.5px solid rgba(255, 255, 255, 0.447);
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 12px;
+    color: white;
+    background: black;
+    position: absolute;
+    z-index: 2;
+    top: 290px;
+    /* right: 125px; */
+    margin-left: 25px;
+}
+
+.strangers{
+    width: 60px;
+    height: 100%;
+    /* background: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    margin-right: 21px; 
+}
+    
+.strangers img {
+    max-width: 100%;
+    height: auto; 
+    margin-right: 1px;
+}
+
+.temp span{
+    border-radius: 2%;
+    /* overflow: hidden; */
+    margin-top: -1px;
+    margin-left: 27px;
+}
+.temp span img{
+    border-radius: 50%;
+}
+
+#fourth .child #video video{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 65%;
+    height: 56%;
+    object-fit: contain;
+}
+
+section{
+    margin-top: 15px ;
+    background: black;
+}
+
+.faq {
+    width:60%;
+    margin: 50px auto;
+    
+}
+.heads{
+    color: white;
+    width: 100%;
+    background: violet;
+    margin-top: 12px;
+}
+
+.heads h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.5rem;
+    margin-top: 5rem;
+    font-weight: bold;
+    font-style: normal;
+        
+}
+
+.faq div {
+    border: 1px solid #000;
+    margin: 10px 0px;
+    background-color:black;
+    padding: 10px;
+}
+
+
+.question {
+    font-size:30px;
+    background-color:#2d2d2d;
+    margin:0px;
+    padding: 15px;
+    color: white;
+}
+
+
+.answer {
+    font-size:20px;
+    margin:0px;
+    padding: 0px 15px;
+    line-height:2;
+    max-height:0px;
+    overflow:hidden;
+    transition:2s;
+    color: white;
+}
+
+
+.opener{
+    font-size:25px;
+    float:right;
+    line-height:0.8;
+    cursor: pointer;
+    margin: .2px;
+}
+.opener span{
+    font-size:46px;
+    
+}

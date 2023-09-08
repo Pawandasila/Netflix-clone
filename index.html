@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix India- Watch TV Shows Online Watch Movies Online </title>
+    <link rel="icon" type="image/png" href="https://www.netflix.com/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="firstContainer" id="firstBox">
+        <div class="heading">
+            <div class="logo">
+                <img src="assets/images/Netflix-Brand-Logo.png" class="netflixLogo">
+            </div>
+
+            <div class="children">
+                <div class="lang">
+                    <div class="globe">
+                        <img src="assets/images/icons8-globe-50.png" class="globe">
+                    </div>
+                    <div class="language">
+                        <select name="language" id="netflixLanguage">
+                            <option value="English">English</option>
+
+                            <option value="Hindi">Hindi</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="btn">
+                    <a href="#" class="btn">Sign In</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="data" id="content">
+            <h1 class="theme">
+                <strong> Unlimited movies, TV shows and more</strong>
+            </h1>
+            <div class="centerText">
+                <p class="text second">
+                    Watch anywhere. Cancel anytime
+
+                </p>
+            </div>
+            <p class="text">
+                Ready to watch? Enter your email to create or restart your membership
+            </p>
+            <div class="mail">
+                <label for="email" class="input">
+                    <input type="email" name="email" class="email" id="email" required>
+                    <span>Email Address</span>
+                </label>
+                <a href="#" class="btn">GET STARTED</a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="secondContainer" id="secondBox">
+
+        <div class="child">
+            <div class="text">
+                <span class="head">enjoy on your tv</span> <br>
+                <span class="spans">Watch on smart TVs, PlayStation, Xbox <br> , Chromecast, Apple TV, Blu-ray players
+                    <br> and more.</span>
+            </div>
+
+            <div class="video-container" id="video">
+                <img src="assets/images/tv.png" alt="" class="image">
+                <video src="assets/video/video-tv-in-0819.m4v" autoplay loop muted></video>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="secondContainer strangers-thing" id="third">
+
+        <div class="child">
+            <div class="video-container" id="video">
+                <img src="assets/images/mobile-0819.jpg" alt="" class="img">
+                <div class="temp">
+                    <div class="strangers">
+                        <img src="assets/images/strangersThing.png" alt="">
+                    </div>
+                    <h3>Strangers Things</h3>
+                    <span><img src="assets/images/donwload.gif" width="40px" height="40px"> <span>
+                </div>
+
+            </div>
+
+            <div class="text">
+                <div class="para">
+                    <h2 class="head">Download your shows to watch offline</h2> <br>
+                    <p class="spans">Save your favourites easily and always have something to watch.</p>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div class="secondContainer bollywood" id="fourth">
+
+        <div class="child">
+
+
+            <div class="text">
+                <div class="para">
+                    <h2 class="head">Watch Everything</h2> <br>
+                    <p class="spans">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+                </div>
+            </div>
+
+            <div class="video-container" id="video">
+                <img src="assets/images/india.png" alt="" class="image">
+                <video src="assets/video/video-devices-in.m4v" autoplay loop muted></video>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <section class="summary ">
+
+        <div class="faq">
+            <div class="heads">
+                <h2>Frequently Asked Questions</h2>    
+            </div>
+            <div class="main">
+
+                <div>
+                    <p class="question">What does Netflix mean? <span onclick='faq(this)' class="opener"><span>+</span>
+                        </span></p>
+                    <p class="answer">Netflix is a streaming service that offers a wide variety of award-winning TV
+                        shows, movies, anime, documentaries and more – on thousands of internet-connected devices.
+
+                        You can watch as much as you want, whenever you want, without a single ad – all for one low
+                        monthly price. There's always something new to discover, and new TV shows and movies are added
+                        every week!</p>
+                </div>
+
+                <div>
+                    <p class="question">How Much Does Netflix Cost? <span onclick='faq(this)'
+                            class="opener"><span>+</span>
+                        </span></p>
+                    <p class="answer">Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device,
+                        all for one fixed monthly fee. Plans range from ₹ 149 to ₹ 649 a month. No extra costs, no
+                        contracts.</p>
+                </div>
+
+                <div>
+                    <p class="question">Is Netflix Good For Kids? <span onclick='faq(this)'
+                            class="opener"><span>+</span>
+                        </span></p>
+                    <p class="answer">The Netflix Kids experience is included in your membership to give parents control
+                        while kids enjoy family-friendly TV shows and films in their own space.
+
+                        Kids profiles come with PIN-protected parental controls that let you restrict the maturity
+                        rating of content kids can watch and block specific titles you don’t want kids to see.</p>
+                </div>
+
+                <div>
+                    <p class="question">Is Netflix Good For Kids? <span onclick='faq(this)'
+                            class="opener"><span>+</span>
+                        </span></p>
+                    <p class="answer">The Netflix Kids experience is included in your membership to give parents control
+                        while kids enjoy family-friendly TV shows and films in their own space.
+
+                        Kids profiles come with PIN-protected parental controls that let you restrict the maturity
+                        rating of content kids can watch and block specific titles you don’t want kids to see.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</body>
+<script>
+    function faq(ele) {
+        var x = ele.parentElement.nextElementSibling.style.cssText;
+        if (x == 'max-height: 500px;') {
+            ele.style.cssText = 'transform: rotate(0deg);transition:0.3s ease-in;';
+            ele.parentElement.nextElementSibling.style.cssText = "transition:0.3s ease-in;max-height:0px;";
+        }
+        else {
+            ele.style.cssText = 'transform: rotate(45deg);transition:0.3s ease-in;';
+            ele.parentElement.nextElementSibling.style.cssText = " max-height:500px;";
+        }
+    }
+</script>
+
+</html>
